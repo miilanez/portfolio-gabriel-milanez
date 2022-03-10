@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Mukta', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Corpo da Página */
@@ -16,15 +16,11 @@ body {
     background-position: center top;
 }
 
-hr .separador{
-  background: rgba(0,0,0, .85);
-}
-
 /* NavBar */
 
 nav {
 
-  background: rgba(15, 15, 15, .85) ;
+  background: rgba(15, 15, 15, .85);
   display: flex;
   height: 80px;
   width: 100%;   
@@ -113,9 +109,9 @@ nav .menu-btn i{
   display: none;
 }
 
-/* Header */
+/* Home Section */
 
-header .media-icons {
+.home-section .media-icons {
   position: absolute;
   left: 40px;
   bottom: 40%;
@@ -215,7 +211,7 @@ header .media-icons {
   color: #000;
 }
 
-header .foto-milanez img{
+.home-section .foto-milanez img{
   position: absolute;
   right: 7%;
   top: 150px;
@@ -228,41 +224,6 @@ header .foto-milanez img{
 
   nav{
     padding: 0 40px 0 50px;
-  }
-
-  /*
-  header .content {
-    transform: scale(0.90);
-  }
-
-  header .foto-milanez img{
-    transform: scale(0.90);
-    right: 7%;
-
-  }*/
-  
-}
-   /*
-@media (max-width: 1130px){
-  header .content {
-    transform: scale(0.80);
-  }
-
-  header .foto-milanez img{
-    transform: scale(0.80);
-    right: 4%;
-  }
-}
-
-@media (max-width: 1045px){
-  header .content {
-    left: 2%;
-    transform: scale(0.70);
-  }
-
-  header .foto-milanez img{
-    transform: scale(0.70);
-    right: 1%;
   }
 
 }
