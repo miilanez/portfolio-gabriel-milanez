@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--References-->
     <link rel="stylesheet" href="css/style.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <script src="http://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://kit.fontawesome.com/1f8400133f.js" crossorigin="anonymous"></script>   
+    <script src="https://kit.fontawesome.com/1f8400133f.js" crossorigin="anonymous"></script>
 
     <title>Portfólio Gabriel Milanez</title>
 </head>
+
 <body>
 
-    <!--Navbar e Header-->
+    <!--Navbar Section Start-->
     <header>
         <nav class="nav-menu">
-            <div class="logo">Gabriel Milanez</div>
+            <div class="logo">
+                <img src="/assets/img/logo-milanez.png">
+            </div>
             <input type="checkbox" id="click">
             <label for="click" class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -34,41 +38,74 @@
                 <li class="upward"><a href="#">Galeria</a></li>
                 <li class="forward"><a href="#">Contato</a></li>
             </ul>
-           
+
         </nav>
         <hr>
     </header>
-
+    <!--Navbar Section End-->
     <main>
-    <section class="home-section" id="home">
-        <div class="content">
-            <div class="text-content">
-                <div class="text">Olá pessoal, aqui quem fala é o</div>
-                <div class="name">Gabriel Milanez</div>
-                <div class="job">
-                    <span>e sou </span>
-                    <div class="typing-text">
-                        <span>Desenvolvedor Front-End</span>
+        <!--Home Section Start-->
+        <section class="home-section flex-center" id="home">
+            <div class="home-container">
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="content">
+                    <div class="text-content">
+                        <div class="text">Olá, aqui é o</div>
+                        <div class="name">Gabriel Milanez</div>
+                        <div class="job">
+                            <span>e sou </span>
+                            <div class="typing-text">
+                                <span>Desenvolvedor Front-End</span>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button><i class="fa fa-file-lines" aria-hidden="true"></i>  Download Currículo </button>
+                            <button><i class="fa fa-user" aria-hidden="true"></i>  Visitar LinkedIn </button>
+                        </div>
                     </div>
                 </div>
-                <div class="buttons">
-                    <button><i class="fa fa-file-lines" aria-hidden="true"></i> Download Currículo </button>
-                    <button><i class="fa fa-user" aria-hidden="true"></i> Visitar LinkedIn </button>
+                <div class="home-img">
+                    <img src="/assets/img/foto_gabriel.png" alt="foto de gabriel milanez">
                 </div>
             </div>
-        </div>
-        <div class="foto-milanez">
-            <img src="/assets/img/foto_gabriel.png" alt="foto de gabriel milanez">
-        </div>
-        <div class="media-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-        </div>
-    </section>
+            <div class="icone-rolagem">
+                <img src="/assets/img/mouse.png" alt="">
+             </div>
+            <a href="#sobre" class="scroll-down"> Rolar para Baixo <i class="fas fa-arrow-down"></i></a>
+        </section>
+        <!--Home Section End-->
+        <!--About Section Start-->
+        <section class="about section" id="sobre">
+            <div class="container flex-center">
+                <h1 class="section-title-01">Sobre</h1>
+                <h2 class="section-title-02">Sobre Mim</h2>
+                <div class="content flex-center">
+                    <div class="about-img">
+                        <img src="/assets/img/foto_gabriel.png" alt="">
+                    </div>
+                    <div class="about-info">
+                        <div class="description">
+                            <h3> Eu sou Gabriel Milanez</h3>
+                            <h4>E sou <span>Desenvolvedor Front-End </span> e <span> Profissional de T.I.</span> de <span>Recife</span></h4>
+                            <p>Tudo começou em 2014, quando conheci a tecnologia e o que ela é capaz de fazer. Desde então, eu sabia que não tinha como seguir por outro caminho. A paixão pelos recursos tecnológicos e seu potencial poder em ajudar as pessoas, me convenceram de que esta deveria ser a minha missão.</p>
+                        </div>
+                        <div class="button-about">
+                            <button><i class="fa fa-download" aria-hidden="true"></i>  Download CV </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About Section End-->
+        <!--Projects Section Start-->
+        <!--Projects Section End-->
+
     </main>
-    
+
     <!--Main - Sobre-->
 
     <!--
