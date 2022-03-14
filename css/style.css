@@ -27,6 +27,13 @@ html {
   background: #AEE637;
 }
 
+/* Caixa de Seleção de texto*/
+
+::selection {
+  color: #000;
+  background-color: #AEE637;
+}
+
 /* Corpo da Página */
 
 body {
@@ -451,6 +458,19 @@ configuração abaixo apenas para destaque da área sobre
 .card-competences img:hover {
   opacity: 1;
 }
+
+/* Section Projects*/
+
+.projects .container .content {
+  column-gap: 40px;
+  width: 100%;
+}
+
+/* Section Contact-Me*/
+
+
+
+/* Section Footer*/
 
 
 
