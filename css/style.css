@@ -256,8 +256,8 @@ nav .menu-btn i{
   cursor: pointer;
   border-radius: 6px;
   outline: none;
-  border: 2px solid #648A64;
-  background: rgba(0, 0, 0, .67);
+  border: none;
+  background: #bedfbe0e;
   transition: all 0.3s ease;
 }
 
@@ -280,8 +280,8 @@ nav .menu-btn i{
   cursor: pointer;
   border-radius: 6px;
   outline: none;
-  border: 2px solid #648A64;
-  background: rgba(0, 0, 0, .67);
+  border: none;
+  background: #bedfbe0e;
   transition: all 0.3s ease;
 }
 
@@ -291,6 +291,32 @@ nav .menu-btn i{
   border-color: #fff;
   color: #000;
 }
+
+.button-contact button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #dadfe9;
+  margin: auto;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background: #bedfbe0e;
+  transition: all 0.3s ease;
+}
+
+.button-contact button:hover{
+  transform: scale(0.98);
+  background: #AEE637;
+  border-color: #fff;
+  color: #000;
+}
+
+/*Home Container*/
 
 .home-container .home-img{
   position: relative;
@@ -432,7 +458,7 @@ configuração abaixo apenas para destaque da área sobre
 }
 
 .card-competences {
-  background: rgba(0, 0, 0, .67);
+  background: #bedfbe1a;
   margin: 10px 0 20px;
   padding: 10px 20px 20px 20px;
   border-radius: 12px;
@@ -468,9 +494,164 @@ configuração abaixo apenas para destaque da área sobre
 
 /* Section Contact-Me*/
 
+.contact .container .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
+.contact-left h2 {
+  font-size: 2.1em;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.contact-list li {
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+.contact-list li h3{
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-list li h3 i{
+  color:#AEE637;
+  font-size: 1.3em;
+  margin-right: 10px;
+}
+
+.contact-list li span {
+  color:#fbfcfb;
+  margin-left: 40px;
+}
+
+.contact-list li span a {
+  color:#2b2e2b;
+}
+
+.contact-right p {
+  color: #dadfe9;
+  font-size: 1.6em;
+  margin-bottom: 30px;
+}
+
+.contact-form input, .contact-form textarea {
+  border: none;
+  color: #AEE637;
+  background: #bedfbe1a;
+  font-size: 1em;
+  margin-bottom: 20px;
+  padding: 15px 40px 40px 20px;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  width: 100%;
+  resize: none;
+}
+
+::placeholder {
+  color:#bedfbe;
+}
+
+.contact-form .first-row input {
+  width: 100%;
+}
+
+.contact-form .second-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form .second-row input {
+  width: 48%;
+}
+
+.contact-form .button-contact {
+  border: none;
+  margin-top: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 /* Section Footer*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #111;
+  width: 100%;
+  margin-top: 50px;
+  padding: 3rem 2rem;
+  color: #648A64;
+}
+
+footer a {
+  color: #AEE637;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.footer-container .about h2 {
+  font-size: 3em;
+  font-weight: 600;
+  background: linear-gradient(to top, transparent 0%, #aee637 50%) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: .8;
+}
+
+.footer-container .about a {
+  text-decoration: none;
+}
+
+.footer-container .about p {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.footer-container .info, .footer-container .follow {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-container .info h3, .footer-container .follow h3{
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.footer-container .info ul, .footer-container .follow ul{
+  display: flex;
+  list-style: none;
+}
+
+.footer-container .info a {
+  margin: 20px;
+}
+
+.footer-container .follow a {
+  font-size: 1.5em;
+  margin: 20px;
+}
+
+.footer-copyright p {
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 50px;
+}
 
 
 
