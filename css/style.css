@@ -244,11 +244,15 @@ nav .menu-btn i{
 }
 
 /* Botões */
-.buttons{
-  margin: 30px 0 0 50px;
+
+.content .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
-.buttons button{
+.content .buttons button{
+  display: flex;
   color: #dadfe9;
   margin: 0 10px;
   padding: 10px 20px;
@@ -264,57 +268,16 @@ nav .menu-btn i{
 .buttons button:hover{
   transform: scale(0.98);
   background: #AEE637;
-  border-color: #fff;
   color: #000;
 }
 
-.button-about button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #dadfe9;
-  margin: auto;
-  padding: 10px 20px;
-  font-size: 20px;
-  cursor: pointer;
-  border-radius: 6px;
-  outline: none;
-  border: none;
-  background: #bedfbe0e;
-  transition: all 0.3s ease;
+.buttons i{
+  color: #bedfbe;
+  font-size: 1.2em;
+  margin-right: 5px;
 }
 
-.button-about button:hover{
-  transform: scale(0.98);
-  background: #AEE637;
-  border-color: #fff;
-  color: #000;
-}
 
-.button-contact button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #dadfe9;
-  margin: auto;
-  padding: 10px 20px;
-  font-size: 20px;
-  cursor: pointer;
-  border-radius: 6px;
-  outline: none;
-  border: none;
-  background: #bedfbe0e;
-  transition: all 0.3s ease;
-}
-
-.button-contact button:hover{
-  transform: scale(0.98);
-  background: #AEE637;
-  border-color: #fff;
-  color: #000;
-}
 
 /*Home Container*/
 
@@ -518,7 +481,7 @@ configuração abaixo apenas para destaque da área sobre
 }
 
 .contact-list li h3 i{
-  color:#AEE637;
+  color: #bedfbe;
   font-size: 1.3em;
   margin-right: 10px;
 }
@@ -529,7 +492,8 @@ configuração abaixo apenas para destaque da área sobre
 }
 
 .contact-list li span a {
-  color:#2b2e2b;
+  color:#bedfbe;
+  text-decoration: none;
 }
 
 .contact-right p {
@@ -592,7 +556,13 @@ footer {
 }
 
 footer a {
-  color: #AEE637;
+  color: #bedfbe;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+footer a:hover{
+  opacity: 1;
 }
 
 .footer-container {
@@ -603,7 +573,7 @@ footer a {
 }
 
 .footer-container .about h2 {
-  font-size: 3em;
+  font-size: 2.2em;
   font-weight: 600;
   background: linear-gradient(to top, transparent 0%, #aee637 50%) ;
   -webkit-background-clip: text;
@@ -619,6 +589,7 @@ footer a {
   font-size: 1em;
   font-weight: 300;
   margin-bottom: 30px;
+  letter-spacing: 0.39em;
 }
 
 .footer-container .info, .footer-container .follow {
@@ -640,6 +611,7 @@ footer a {
 
 .footer-container .info a {
   margin: 20px;
+  text-decoration: none;
 }
 
 .footer-container .follow a {
@@ -653,6 +625,22 @@ footer a {
   margin-top: 50px;
 }
 
+/* Botão rolar para cima */
+.scroll-up {
+  z-index: 99999;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.scroll-up i{
+  color: #AEE637;
+  font-size: 1.6em;
+}
 
 
 /* Responsividade */
