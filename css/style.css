@@ -34,13 +34,111 @@ html {
   background-color: #AEE637;
 }
 
+/* Botões */
+
+.content .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.content .buttons button{
+  display: flex;
+  color: #dadfe9;
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background: #bedfbe0e;
+  transition: all 0.3s ease;
+}
+
+.buttons button:hover{
+  transform: scale(0.98);
+  background: #AEE637;
+  color: #000;
+}
+
+.buttons i{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #bedfbe;
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
 /* Corpo da Página */
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, .80), rgba(0, 0, 0, .80)100%), url(/assets/img/fundo_matrix.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, .80), rgba(0, 0, 0, .80)100%), url(assets/img/fundo_matrix.gif);
     background-color: #1b2029;
     color: whitesmoke;
     background-position: center top;
+}
+
+/* Estilos para todas as Sessões */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-text-center {
+  text-align: center;
+}
+
+.section {
+  position: relative;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 2rem 2rem; /* 6rem 2rem 2rem */
+}
+
+.sub-section {
+  position: relative;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6rem 0;
+}
+
+.section-title-01 {
+  
+  font-size: 4.5em;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: linear-gradient(to top, transparent 0%, #fbfcfb 70% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: .1;
+}
+
+.section-title-02 {
+  font-size: 2.5em;
+  font-weight: 700;
+  transform: translateY(-80px);
+  color: #bedfbe;
+}
+
+.section-title-02::before {
+  content: '';
+  position: absolute;
+  width: 85px;
+  height: 5px;
+  right: 0;
+  bottom: 0;
+  background: #AEE637;
+}
+
+.container{
+  position: relative;
+  flex-direction: column;
 }
 
 /* Header */
@@ -158,8 +256,6 @@ nav .menu-btn i{
   display: none;
 }
 
-
-
 #click{
   display: none;
 }
@@ -249,42 +345,6 @@ nav .menu-btn i{
   50% { border-color: #fff; }
 }
 
-/* Botões */
-
-.content .buttons {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-
-.content .buttons button{
-  display: flex;
-  color: #dadfe9;
-  margin: 0 10px;
-  padding: 10px 20px;
-  font-size: 20px;
-  cursor: pointer;
-  border-radius: 6px;
-  outline: none;
-  border: none;
-  background: #bedfbe0e;
-  transition: all 0.3s ease;
-}
-
-.buttons button:hover{
-  transform: scale(0.98);
-  background: #AEE637;
-  color: #000;
-}
-
-.buttons i{
-  color: #bedfbe;
-  font-size: 1.2em;
-  margin-right: 5px;
-}
-
-
-
 /*Home Container*/
 
 .home-container .home-img{
@@ -312,67 +372,6 @@ nav .menu-btn i{
   margin-top: 50px;
 }
 
-/* Estilos para todas as Sessões */
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-text-center {
-  text-align: center;
-}
-
-.section {
-  position: relative;
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2rem 2rem 2rem; /* 6rem 2rem 2rem */
-}
-
-.sub-section {
-  position: relative;
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 6rem 0;
-}
-
-.section-title-01 {
-  
-  font-size: 4.5em;
-  font-weight: 800;
-  margin-bottom: 2rem;
-  background: linear-gradient(to top, transparent 0%, #fbfcfb 70% );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: .1;
-}
-
-.section-title-02 {
-  font-size: 2.5em;
-  font-weight: 700;
-  transform: translateY(-80px);
-  color: #bedfbe;
-}
-
-.section-title-02::before {
-  content: '';
-  position: absolute;
-  width: 85px;
-  height: 5px;
-  right: 0;
-  bottom: 0;
-  background: #AEE637;
-}
-
-.container{
-  position: relative;
-  flex-direction: column;
-}
-
 /*Sessão Sobre*/
 
 /*
@@ -386,7 +385,6 @@ configuração abaixo apenas para destaque da área sobre
 .about .container{
   text-align: center;
 }
-
 
 .about .container .content {
   column-gap: 40px;
@@ -403,8 +401,6 @@ configuração abaixo apenas para destaque da área sobre
   min-width: 400px;
   border-radius: 50px;
 }
-
-
 
 .about-info .description{
   max-width: 700px;
@@ -431,25 +427,26 @@ configuração abaixo apenas para destaque da área sobre
   font-size: 1em;
   margin-bottom: 10px;
   padding-bottom: 25px;
-  
 }
 
 .card-competences {
   background: #bedfbe1a;
-  margin: 10px 0 20px;
-  padding: 10px 20px 20px 20px;
+  margin: 20px 0 20px;
+  padding: 20px 20px 20px 20px;
   border-radius: 12px;
   display: flex;
-  justify-content: space-around;
-  /*border: 2px solid #648A64;*/
+  justify-content: space-evenly;
 }
+
+/*.card-competences img {
+  justify-content: space-between;
+}*/
 
 .title-card-competences {
   font-size: 1em;
   font-weight: 600;
   color: #bedfbe;
   text-align: center;
-  margin-bottom: 5px;
 }
 
 .card-competences img {
@@ -585,6 +582,10 @@ footer a:hover{
   justify-content: space-between;
   width: 100%;
   max-width: 1300px;
+}
+
+.footer-container .about{
+  align-items: center;
 }
 
 .footer-container .about h2 {
@@ -734,6 +735,29 @@ footer a:hover{
 
   /* Section Home */
 
+  .home-section .home-container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .content .name {
+    font-size: 50px;
+  }
+
+  .home-container .media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0;
+  }
+  
+  .home-container .media-icons i{
+    margin: 40px;
+  }
+
   .home-section .home-container .info{
     font-size: 0.85rem;
   }
@@ -786,10 +810,6 @@ footer a:hover{
     margin-bottom: 50px;
   }
 
-  .footer-container .about{
-    align-items: center;
-  }
-
   .footer-container .info ul{
     align-items: center;
     flex-direction: column;
@@ -815,5 +835,19 @@ footer a:hover{
 @media (max-width: 999px) {
   .content .job {
     font-size: 23px;
+  }
+}
+
+@media (max-width: 423px) {
+
+  /* Home Section */
+  .content .name {
+    font-size: 47px;
+  }
+
+  /* About Section */
+  card-competences img {
+    height: 3px; 
+    width: 3.5px;
   }
 }
