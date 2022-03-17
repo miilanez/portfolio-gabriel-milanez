@@ -56,6 +56,10 @@ html {
   transition: all 0.3s ease;
 }
 
+.buttons a{
+  text-decoration: none;
+}
+
 .buttons button:hover{
   transform: scale(0.98);
   background: #AEE637;
@@ -74,7 +78,7 @@ html {
 /* Corpo da Página */
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, .80), rgba(0, 0, 0, .80)100%), url(assets/img/fundo_matrix.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, .90), rgba(0, 0, 0, .80)100%), url(/assets/img/bg.jpg);
     background-color: #1b2029;
     color: whitesmoke;
     background-position: center top;
@@ -400,6 +404,8 @@ configuração abaixo apenas para destaque da área sobre
   max-width: 100%;
   min-width: 400px;
   border-radius: 50px;
+  border-bottom: 4px solid #4CFA40;
+  border-left: 4px solid #4CFA40;
 }
 
 .about-info .description{
@@ -582,6 +588,10 @@ footer a:hover{
   justify-content: space-between;
   width: 100%;
   max-width: 1300px;
+}
+
+.footer-container .footer-group-title {
+  color: #4CFA40;
 }
 
 .footer-container .about{
