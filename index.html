@@ -9,12 +9,15 @@
     <!--References-->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Pacote de Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+    <!-- Link Pacotes de Ícones -->
     <script src="http://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://kit.fontawesome.com/1f8400133f.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Portfólio Gabriel Milanez</title>
 </head>
@@ -25,12 +28,9 @@
     <header class="sticky">
         <nav class="nav-menu">
             <div class="logo">
-                <img src="assets/img/logo-milanez.png">
+                <img src="assets/img/logo-milanez.png" loading="lazy">
             </div>
-            <input type="checkbox" id="click">
-            <label for="click" class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </label>
+            
             <ul class="nav-links">
                 <li class="center"><a class="active" href="#home">Início</a></li>
                 <li class="center"><a href="#sobre">Sobre</a></li>
@@ -38,6 +38,13 @@
                 <li class="center"><a href="#contatos">Contato</a></li>
                 <li class="center"><a href="#">Experiências</a></li>
             </ul>
+
+            <div class="menu-btn">
+                <div class="icon">
+                    <i class='bx bx-menu open'></i>
+                    <i class='bx bx-x close'></i>
+                </div>
+            </div>
 
         </nav>
 
@@ -74,7 +81,7 @@
             </div>
         </div>
         <div class="icone-rolagem">
-            <img src="assets/img/mouse.png" alt="">
+            <img src="assets/img/mouse.png">
         </div>
         <a href="#sobre" class="scroll-down"> <i class="fas fa-arrow-down"></i></a>
     </section>
@@ -86,7 +93,7 @@
             <h2 class="section-title-02">Sobre Mim</h2>
             <div class="content flex-center">
                 <div class="about-img">
-                    <img src="assets/img/foto-gabriel-sobre-alt.jpg" alt="">
+                    <img src="assets/img/foto-gabriel-sobre-alt.jpg"  loading="lazy">
                 </div>
                 <div class="about-info">
                     <div class="description">
@@ -102,12 +109,12 @@
                         </p>
                     </div>
                     <div class="card-competences">
-                        <a href="#"><img src="assets/img/js2.png" target="_blank" rel="noopener noreferrer"></a>
-                        <a href="#"><img src="assets/img/react.svg" target="_blank" rel="noopener noreferrer"></a>
-                        <a href="#"><img src="assets/img/html5.svg" target="_blank" rel="noopener noreferrer"></a>
-                        <a href="#"><img src="assets/img/css3.svg" target="_blank" rel="noopener noreferrer"></a>
-                        <a href="#"><img src="assets/img/python.svg" target="_blank" rel="noopener noreferrer"></a>
-                        <a href="#"><img src="assets/img/java.png" target="_blank" rel="noopener noreferrer"></a>
+                        <a href="#"><img src="assets/img/js2.png" loading="lazy" target="_blank" rel="noopener noreferrer"></a>
+                        <a href="#"><img src="assets/img/react.svg"  loading="lazy" target="_blank" rel="noopener noreferrer"></a>
+                        <a href="#"><img src="assets/img/html5.svg"  loading="lazy" target="_blank" rel="noopener noreferrer"></a>
+                        <a href="#"><img src="assets/img/css3.svg"  loading="lazy" target="_blank" rel="noopener noreferrer"></a>
+                        <a href="#"><img src="assets/img/python.svg"  loading="lazy" target="_blank" rel="noopener noreferrer"></a>
+                        <a href="#"><img src="assets/img/java.png"  loading="lazy" target="_blank" rel="noopener noreferrer"></a>
                     </div>
                     <div class="buttons">
                         <a href="assets/docs/cv-gabriel-milanez.pdf" target="_blank" rel="noopener noreferrer"><button><i class="fas fa-download" aria-hidden="true"></i> Download Currículo </button></a>

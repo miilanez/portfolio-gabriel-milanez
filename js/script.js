@@ -1,6 +1,46 @@
-// Efeitos de Navegação ao rolar o "scroll" na NavBar
+// Estilo do Menu Hamburguer
 
-windows.addEventListener("scroll", function(){
-    const header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
-});
+let menuBtn = document.querySelectorAll(".menu-btn");
+for (var i = 0; i < menuBtn.length; i++) {
+    menuBtn[i].addEventListener("click", (event) => {
+        console.log(event.target);
+        event.target.classList.toggle("active");
+    });
+}
+
+// Responsividade da NavBar
+
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+        this.mobileMenu = document.querySelector(mobileMenu);
+        this.navList = document.querySelector(navList);
+        this.navLinks = document.querySelectorAll(navLinks);
+        this.activeClass = "active";
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+
+    handleClick() {
+        this.navList.classList.toggle(this.activeClass);
+        this.mobileMenu.classList.toggle(this.activeClass);
+    }
+
+    addClickEvent() {
+        this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+
+    init() {
+        if (this.mobileMenu) {
+            this.addClickEvent();
+        }
+        return this;
+    }
+}
+
+const mobileNavbar = new MobileNavbar(
+    ".menu-btn",
+    ".nav-links",
+    ".nav-links li",
+);
+mobileNavbar.init();
