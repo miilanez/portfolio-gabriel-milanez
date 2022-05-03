@@ -504,8 +504,8 @@ configuração abaixo apenas para destaque da área sobre
 }
 
 .about-img img {
-  max-width: 100%;
-  min-width: 400px;
+  max-width: 80%;
+  min-width: 50%;
   border-radius: 50px;
   border-bottom: 4px solid #4CFA40;
   border-left: 4px solid #4CFA40;
@@ -1099,6 +1099,17 @@ footer a:hover {
 
 @media screen and (max-width: 600px) {
 
+  /* About Section */
+
+  .card-competences {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px;
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    justify-items: center;
+  }
+
   /* Experiences Timeline Section */
 
   .left {
@@ -1138,7 +1149,16 @@ footer a:hover {
   }
 }
 
-@media (max-width: 423px) {
+@media (max-width: 483px) {
+
+  /*Logo*/
+  nav .logo {
+    font-size: 1em;
+  }
+  
+  nav .logo span {
+    color: #AEE637;
+  }
 
   /* Home Section */
   .content .name {
