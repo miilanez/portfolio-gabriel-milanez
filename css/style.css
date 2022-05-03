@@ -179,6 +179,12 @@ nav {
   transition: .6s ease;
 }
 
+nav .logo {
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #bedfbe;
+}
+
 .nav-links {
   /* mesmo que nav-links*/
   display: flex;
