@@ -1149,6 +1149,10 @@ footer a:hover {
     left: 0%;
   }
 
+  /* Contato */
+  .contact-right {
+    text-align: center;
+  }
 
   /* Contato WhattsApp */
   .contact-whattsapp h1 {
