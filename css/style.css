@@ -78,7 +78,7 @@ html {
 /* Corpo da Página */
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, .90), rgba(0, 0, 0, .80)100%), url(/assets/img/backgrounds/bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, .90), rgba(0, 0, 0, .80)100%), url(/assets/img/backgrounds/fundo_matrix.gif);
   background-color: #1b2029;
   color: whitesmoke;
   background-position: center top;
