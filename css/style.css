@@ -1151,6 +1151,16 @@ footer a:hover {
 
 @media (max-width: 483px) {
 
+  /* Configurações gerais */ 
+
+  .section-title-01 {
+    font-size: 3em;
+  }
+  
+  .section-title-02 {
+    font-size: 2em;
+  }
+
   /*Logo*/
   nav .logo {
     font-size: 1em;
