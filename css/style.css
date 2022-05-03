@@ -334,23 +334,23 @@ nav .logo img {
 
 /* NavBar Sticky */
 
-nav.sticky{
+nav.sticky {
   height: 60px;
   background: rgba(15, 15, 15, .85);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav.sticky .logo a{
+nav.sticky .logo a {
   color: #fff;
 }
 
-nav.sticky .nav-links li a{
+nav.sticky .nav-links li a {
   color: #648A64;
   transition: all 0.4s ease;
 }
 
-nav.sticky .nav-links li a:hover{
- color: #AEE637;
+nav.sticky .nav-links li a:hover {
+  color: #AEE637;
 }
 
 /* Home Section */
@@ -657,9 +657,9 @@ configuração abaixo apenas para destaque da área sobre
 
 /* The actual content */
 .content-exp {
-  
+
   padding: 20px 30px;
-  background-color: rgba(15, 15, 15, .85);
+  background-color: rgba(15, 15, 15, 0.620);
   position: relative;
   border-radius: 6px;
 }
@@ -676,8 +676,6 @@ configuração abaixo apenas para destaque da área sobre
   color: white;
 }
 
-
-
 /* Section Projects*/
 
 .projects .container .content {
@@ -693,6 +691,15 @@ configuração abaixo apenas para destaque da área sobre
   width: 100%;
 }
 
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
 .contact-left h2 {
   font-size: 2.1em;
   font-weight: 800;
@@ -702,6 +709,9 @@ configuração abaixo apenas para destaque da área sobre
 .contact-list li {
   margin-bottom: 40px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .contact-list li h3 {
@@ -718,7 +728,6 @@ configuração abaixo apenas para destaque da área sobre
 
 .contact-list li span {
   color: #fbfcfb;
-  margin-left: 40px;
 }
 
 .contact-list li span a {
@@ -772,6 +781,27 @@ configuração abaixo apenas para destaque da área sobre
   cursor: pointer;
 }
 
+.contact-whattsapp {
+  width: 100%;
+  height: 150px;
+  margin-top: 3rem;
+  background: #99ec93;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contact-whattsapp img {
+  width: 140px;
+}
+
+.contact-whattsapp h1 {
+  color: #000;
+  text-decoration: none;
+}
+
 /* Section Footer*/
 
 footer {
@@ -781,7 +811,6 @@ footer {
   flex-direction: column;
   background: #111;
   width: 100%;
-  margin-top: 50px;
   padding: 3rem 2rem;
   color: #648A64;
 }
@@ -940,7 +969,7 @@ footer a:hover {
 
   .nav-links.active {
     transform: translateX(0);
-}
+  }
 
   /* Section Home */
 
@@ -1078,35 +1107,36 @@ footer a:hover {
   }
 
   /* Place the timelime to the left */
-    .timeline::after {
-      left: 65px;
-    }
-  
-  /* Full-width containers */
-    .container-exp {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-  
-  /* Make sure that all arrows are pointing leftwards */
-    .container-exp::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-    }
-  
-  /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-      left: 15px;
-    }
-  
-  /* Make all right containers behave like the left ones */
-    .right {
-      left: 0%;
-    }
+  .timeline::after {
+    left: 65px;
   }
+
+  /* Full-width containers */
+  .container-exp {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container-exp::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
 
 @media (max-width: 423px) {
 
