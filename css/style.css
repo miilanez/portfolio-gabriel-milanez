@@ -791,6 +791,7 @@ configuração abaixo apenas para destaque da área sobre
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  text-align: center;
 }
 
 .contact-whattsapp img {
@@ -1147,6 +1148,13 @@ footer a:hover {
   .right {
     left: 0%;
   }
+
+
+  /* Contato WhattsApp */
+  .contact-whattsapp h1 {
+    font-size: 1.5em;
+  }
+
 }
 
 @media (max-width: 483px) {
