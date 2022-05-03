@@ -168,8 +168,10 @@ header.sticky {
 
 nav {
   background: rgba(15, 15, 15, .85);
-  position: relative;
+  position: fixed;
   display: flex;
+  top: 0;
+  left: 0;
   height: 80px;
   width: 100%;
   align-items: center;
@@ -183,6 +185,10 @@ nav .logo {
   font-size: 1.4em;
   font-weight: 300;
   color: #bedfbe;
+}
+
+nav .logo span {
+  color: #AEE637;
 }
 
 .nav-links {
@@ -324,6 +330,27 @@ nav .logo img {
 
 .icon.line.active i.open {
   transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* NavBar Sticky */
+
+nav.sticky{
+  height: 60px;
+  background: rgba(15, 15, 15, .85);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav.sticky .logo a{
+  color: #fff;
+}
+
+nav.sticky .nav-links li a{
+  color: #648A64;
+  transition: all 0.4s ease;
+}
+
+nav.sticky .nav-links li a:hover{
+ color: #AEE637;
 }
 
 /* Home Section */
