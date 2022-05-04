@@ -657,7 +657,6 @@ configuração abaixo apenas para destaque da área sobre
 
 /* The actual content */
 .content-exp {
-
   padding: 20px 30px;
   background-color: rgba(15, 15, 15, 0.620);
   position: relative;
@@ -681,6 +680,47 @@ configuração abaixo apenas para destaque da área sobre
 .projects .container .content {
   column-gap: 40px;
   width: 100%;
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  max-width: 100%;
+  margin: 0 auto;
+  gap: 20px;
+  list-style: none;
+  padding-bottom: 3rem;
+}
+
+.project-item {
+  background-color: rgba(15, 15, 15, 0.620);
+  padding: 2rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-item-img {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-item img {
+  max-width: 100%;
+  border-radius: 5px;
+  border: 3px solid #AEE637;
+}
+
+.project-item-desc {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.title-project {
+  font-size: 1.3em;
+  color: #99ec93;
 }
 
 /* Section Contact-Me*/
@@ -1163,12 +1203,12 @@ footer a:hover {
 
 @media (max-width: 483px) {
 
-  /* Configurações gerais */ 
+  /* Configurações gerais */
 
   .section-title-01 {
     font-size: 3em;
   }
-  
+
   .section-title-02 {
     font-size: 2em;
   }
@@ -1177,7 +1217,7 @@ footer a:hover {
   nav .logo {
     font-size: 1em;
   }
-  
+
   nav .logo span {
     color: #AEE637;
   }
