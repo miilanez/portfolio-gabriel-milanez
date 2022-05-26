@@ -571,6 +571,17 @@ configuração abaixo apenas para destaque da área sobre
 
 /* Section Experiences*/
 
+.section-experiences {
+  display:flex;
+  flex-direction: column;
+}
+
+.section-experiences .content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
